@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="ContosoAdsCloudService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="ContosoAdsWeb">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=bvnod;AccountKey=GqdkzYEZATO1jiBndMxLvvODuonB3SUoV7OdNJs7jzEdtECykA1CVBta3cMGbgHapqCIn2Dy3e2I8g4ICxdynA==" />
+      <Setting name="StorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=bvnod;AccountKey=GqdkzYEZATO1jiBndMxLvvODuonB3SUoV7OdNJs7jzEdtECykA1CVBta3cMGbgHapqCIn2Dy3e2I8g4ICxdynA==" />
+    </ConfigurationSettings>
+  </Role>
+  <Role name="ContosoAdsWorker">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=bvnod;AccountKey=GqdkzYEZATO1jiBndMxLvvODuonB3SUoV7OdNJs7jzEdtECykA1CVBta3cMGbgHapqCIn2Dy3e2I8g4ICxdynA==" />
+      <Setting name="StorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=bvnod;AccountKey=GqdkzYEZATO1jiBndMxLvvODuonB3SUoV7OdNJs7jzEdtECykA1CVBta3cMGbgHapqCIn2Dy3e2I8g4ICxdynA==" />
+      <Setting name="ContosoAdsDbConnectionString" value="Server=tcp:qxsyjsvsn5.database.windows.net,1433;Database=adsvnod;User ID=vnod@qxsyjsvsn5;Password=MOSTLAZY#22;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
